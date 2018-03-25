@@ -1,2 +1,2 @@
-# Love St.Croix
-Informational page for why I love my home town, St. Croix U.S.V.I
+# Carribbean Living
+What a site would look like that made me want to move to the carribean. 
