@@ -1,0 +1,131 @@
+/* ==========================================================================
+   INITIAL SET UP
+========================================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Palanquin', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+/* ==========================================================================
+   HEADER
+========================================================================== */
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), #222), url(../img/carribean-beach.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 250%;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  word-spacing: 3px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.row {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.tagline-text-box {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1140px;
+}
+
+.logo {
+  height: 100px;
+  float: left;
+  width: auto;
+  margin-top: 10px;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 35px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  border-bottom: 1.5px solid transparent; /* sunset orange */
+  color: #fff;
+  font-size: 90%;
+  padding: 8px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 1.5px solid #ff4e46; /* sunset orange */
+}
+
+/* ==========================================================================
+   BUTTONS /* btn secondary background-color: #3dc1d3; /* Blue Curacao */
+/* ========================================================================== */
+
+.btn:link,
+.btn:visited {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: 200;
+  text-decoration: none;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  padding: 10px 30px;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #ff5e57; /* sunset orange */
+  border: 1px solid #ff5e57; /* sunset orange */
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-outlined:link,
+.btn-outlined:visited {
+  border: 1px solid #ff5e57; /* sunset orange */
+  color: #ff5e57; /* sunset orange */
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #ff4e46;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #ff4e46; /* sunset orange */
+}
+
+.btn-outlined:hover,
+.btn-outlined:active {
+  border: 1px solid #ff4e46; /* sunset orange */
+  color: #fff; /* white text */
+}
