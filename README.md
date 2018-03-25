@@ -1,2 +1,2 @@
 # Caribbean Living
-What a site would look like that made me want to move to the carribean. 
+The shell of a site I am building as a promotional piece to move the St. Croix U.S.V.I. 
