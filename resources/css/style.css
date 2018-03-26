@@ -18,8 +18,59 @@ html {
 }
 
 /* ==========================================================================
+   MULTIUSE SETTINGS
+========================================================================== */
+
+.row {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+section {
+  padding: 80px 0;
+}
+/* ==========================================================================
    HEADER
 ========================================================================== */
+
+h1,
+h2,
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 200;
+}
+
+h1 {
+  color: #fff;
+  font-size: 250%;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  word-spacing: 3px;
+}
+
+h2 {
+  font-size: 180%;
+  letter-spacing: 1.5px;
+  margin-bottom: 35px;
+  text-align: center;
+  word-spacing: 2px;
+}
+
+h3 {
+  font-size: 120%;
+  margin-bottom: 15px;
+}
+
+h2::after {
+  background-color: #3dc1d3; /* Blue Curacao */
+  display: block;
+  height: 2px;
+  content: " ";
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 100px;
+}
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), #222), url(../img/carribean-beach.jpg);
@@ -28,20 +79,11 @@ header {
   height: 100vh;
 }
 
-h1 {
-  color: #fff;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 250%;
-  font-weight: 200;
-  letter-spacing: 1.5px;
-  word-spacing: 3px;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.row {
-  margin: 0 auto;
-  max-width: 1140px;
+.logo {
+  float: left;
+  height: 100px;
+  margin-top: 10px;
+  width: auto;
 }
 
 .tagline-text-box {
@@ -50,13 +92,6 @@ h1 {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 1140px;
-}
-
-.logo {
-  height: 100px;
-  float: left;
-  width: auto;
-  margin-top: 10px;
 }
 
 .main-nav {
@@ -75,7 +110,7 @@ h1 {
   border-bottom: 1.5px solid transparent; /* sunset orange */
   color: #fff;
   font-size: 90%;
-  padding: 8px 0;
+  padding: 10px 0;
   text-decoration: none;
   text-transform: uppercase;
   transition: border-bottom 0.2s;
@@ -87,6 +122,36 @@ h1 {
 }
 
 /* ==========================================================================
+   PARAGRAPH STYLING
+/* ========================================================================== */
+
+.extended-text {
+  line-height: 130%;
+  margin-left: 10%;
+  width: 80%;
+}
+
+.box {
+  padding: 1.5%;
+}
+
+.box p {
+  font-size: 80%;
+  line-height: 140%;
+}
+
+/* ==========================================================================
+   ICON STYLING
+/* ========================================================================== */
+
+.large-icons {
+  color: #3dc1d3; /* Blue Curacao */
+  display: block;
+  font-size: 300%;
+  margin-bottom: 10px;
+}
+
+/* ==========================================================================
    BUTTONS /* btn secondary background-color: #3dc1d3; /* Blue Curacao */
 /* ========================================================================== */
 
@@ -95,9 +160,9 @@ h1 {
   border-radius: 200px;
   display: inline-block;
   font-weight: 200;
+  padding: 10px 30px;
   text-decoration: none;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
-  padding: 10px 30px;
 }
 
 .btn-full:link,
@@ -116,16 +181,16 @@ h1 {
 
 .btn:hover,
 .btn:active {
-  background-color: #ff4e46;
+  background-color: #ff4e46; /* darker sunset orange */
 }
 
 .btn-full:hover,
 .btn-full:active {
-  border: 1px solid #ff4e46; /* sunset orange */
+  border: 1px solid #ff4e46; /* darker sunset orange */
 }
 
 .btn-outlined:hover,
 .btn-outlined:active {
-  border: 1px solid #ff4e46; /* sunset orange */
+  border: 1px solid #ff4e46; /* darker sunset orange */
   color: #fff; /* white text */
 }
