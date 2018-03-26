@@ -8,14 +8,16 @@
   padding: 0;
 }
 
-*:focus {outline: none};
+*:focus { outline: none };
 
-html {
+html,
+body {
   background-color: #fff;
   color: #555;
   font-family: 'Palanquin', sans-serif;
   font-size: 20px;
   font-weight: 300;
+  overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }
 
@@ -37,9 +39,7 @@ html {
   max-width: 1140px;
 }
 
-section {
-  padding: 80px 0;
-}
+section { padding: 80px 0; }
 
 a:link,
 a:visited,
@@ -349,9 +349,6 @@ a.btn-island {
   background-color: #f1fbfc; /* Almost White-Blue Curacao */
 }
 
-.other-islands div.row {
-
-}
 .box img {
   width: 100%;
   height: auto;
@@ -418,9 +415,7 @@ textarea {
   width: 100%;
 }
 
-textarea {
-  height: 100px;
-}
+textarea { height: 100px; }
 
 input[type=checkbox] {
   margin: 10px 5px 10px 0;
