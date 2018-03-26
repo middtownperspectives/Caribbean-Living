@@ -194,3 +194,32 @@ header {
   border: 1px solid #ff4e46; /* darker sunset orange */
   color: #fff; /* white text */
 }
+
+/* ==========================================================================
+   FAVORITE ISLAND PLACES & IMAGES SECTION
+/* ========================================================================== */
+
+.island-favorites {
+  padding: 0;
+}
+
+.island-bestinclass {
+  list-style: none;
+  width: 100%;
+}
+
+.island-bestinclass li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.island-photo {
+  margin: 0;
+  width: 100%;
+}
+
+.island-photo img {
+  height: auto;
+  width: 100%;
+}
