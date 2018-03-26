@@ -17,6 +17,14 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
 /* ==========================================================================
    MULTIUSE SETTINGS
 ========================================================================== */
@@ -122,7 +130,7 @@ header {
 }
 
 /* ==========================================================================
-   PARAGRAPH STYLING
+   PARAGRAPH STYLING IN Don't just survive — Live & Love Life SECTION
 /* ========================================================================== */
 
 .extended-text {
@@ -224,12 +232,63 @@ header {
 .island-photo img {
   height: auto;
   opacity: 0.7;
-  transform: scale(1.20);
+  transform: scale(1.30);
   transition: transform 0.6s, opacity 0.6s;
   width: 100%;
 }
 
 .island-photo img:hover {
   opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.10);
+}
+
+/* ==========================================================================
+   AN ISLAND FOR EVERYONE
+/* ========================================================================== */
+
+.island-container{
+
+}
+.island-desc-box div.island {
+  height: 100px;
+}
+
+.island {
+  position:relative;
+}
+.island img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin: 5% auto;
+}
+
+.island-names {
+  margin: 10%;
+}
+
+.island-names p {
+  margin-top: 10%;
+}
+
+.island-names div {
+  border-bottom: 1.5px solid #3dc1d3; /* Blue Curacao */
+  color: #3dc1d3; /* Blue Curacao */
+  display: inline-block;
+  font-size: 150%;
+  padding: 5px;
+  text-align: center;
+}
+
+.btn-island {
+
+}
+
+a.btn-island {
+  display: inline-block;
+  height: 80;
+  width: 220px;
 }
