@@ -3,7 +3,8 @@
 ========================================================================== */
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -48,6 +49,7 @@ a:active {
   color: #ff5e57; /* sunset orange */
   padding-bottom: 1px;
   text-decoration: none;
+  -webkit-transition: border-bottom 0.2s;
   transition: border-bottom 0.2s;
 }
 
@@ -102,6 +104,7 @@ h2::after {
 
 header {
   background-attachment: fixed;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(#222)), url(../img/carribean-beach.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), #222), url(../img/carribean-beach.jpg);
   background-position: center;
   background-size: cover;
@@ -119,7 +122,8 @@ header {
   left: 50%;
   position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 1140px;
 }
 
@@ -142,6 +146,7 @@ header {
   padding: 10px 0;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-transition: border-bottom 0.2s;
   transition: border-bottom 0.2s;
 }
 
@@ -203,6 +208,7 @@ input[type=submit] {
   font-weight: 200;
   padding: 10px 30px;
   text-decoration: none;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -272,14 +278,19 @@ input[type=submit]:active {
 .island-photo img {
   height: auto;
   opacity: 0.7;
-  transform: scale(1.30);
+  -webkit-transform: scale(1.30);
+          transform: scale(1.30);
+  -webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+  transition: opacity 0.6s, -webkit-transform 0.6s;
   transition: transform 0.6s, opacity 0.6s;
+  transition: transform 0.6s, opacity 0.6s, -webkit-transform 0.6s;
   width: 100%;
 }
 
 .island-photo img:hover {
   opacity: 1;
-  transform: scale(1.10);
+  -webkit-transform: scale(1.10);
+          transform: scale(1.10);
 }
 
 .btn-island:link,
@@ -306,7 +317,8 @@ input[type=submit]:active {
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   margin: 5% auto;
 }
 
@@ -361,6 +373,7 @@ a.btn-island {
 
 .island-testimonials {
   background-attachment: fixed;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(#222)), url(../img/beach-dawn-dusk.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), #222), url(../img/beach-dawn-dusk.jpg);
   background-size: cover;
   color: #fff;
@@ -458,6 +471,7 @@ footer {
   border: 0;
   color: #19656f;
   text-decoration: none;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -474,6 +488,7 @@ footer {
 .ion-social-dribbble,
 .ion-social-twitter,
 .ion-plane {
+  -webkit-transition: color 0.3s;
   transition: color 0.3s
 }
 
