@@ -69,4 +69,21 @@ $(document).ready(function () {
 
       offset: '50%',
     });
+
+  //maps
+  let map = new GMaps({
+    div: '.map',
+    lat: 17.746431,
+    lng: -64.701858,
+  });
+
+  map.addMarker({
+    lat: 17.746431,
+    lng: -64.701858,
+    title: 'Lima',
+    infoWindow: {
+      content: '<p>Currently Loving Caribbean Life</p>'
+    }
+  });
+
 });
