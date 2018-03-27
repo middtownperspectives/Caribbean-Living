@@ -75,6 +75,8 @@ $(document).ready(function () {
     div: '.map',
     lat: 17.746431,
     lng: -64.701858,
+    width: '500px',
+    height: '500px',
   });
 
   map.addMarker({
