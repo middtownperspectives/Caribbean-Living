@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+  alert("At the moment this page is best viewed in Google Chrome.")
   //sticky naviation
   $('.js--island-features').waypoint(function (direction) {
     if (direction == 'down') {
