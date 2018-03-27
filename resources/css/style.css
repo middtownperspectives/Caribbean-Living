@@ -118,6 +118,14 @@ header {
   width: auto;
 }
 
+.black-logo {
+  display: none;
+  float: left;
+  height: 60px;
+  margin: 5px 0;
+  width: auto;
+}
+
 .tagline-text-box {
   left: 50%;
   position: absolute;
@@ -126,6 +134,10 @@ header {
           transform: translate(-50%, -50%);
   width: 1140px;
 }
+
+/* ==========================================================================
+   NAVIGATION
+/* ========================================================================== */
 
 .main-nav {
   float: right;
@@ -153,6 +165,48 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 1.5px solid #ff4e46; /* sunset orange */
+}
+
+/* ==========================================================================
+   STICKY NAV BAR
+/* ========================================================================== */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  -webkit-box-shadow: 0 2px 2px #f1fbfc;
+          box-shadow: 0 2px 2px #f1fbfc; /* Almost White-Blue Curacao */
+  z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 18px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  color: #555;
+  padding: 34px 0;
+}
+
+.sticky .logo { display: none; }
+.sticky .black-logo { display: block; }
+
+/* ==========================================================================
+   MOBILE NAVBAR
+/* ========================================================================== */
+
+.mobile-nav-icon {
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+  float: right;
+}
+
+.mobile-nav-icon i {
+  color: #fff;
+  font-size: 200%;
 }
 
 /* ==========================================================================
@@ -512,4 +566,24 @@ footer p {
   color: #19656f;
   font-size: 80%;
   text-align: center;
+}
+
+/* ==========================================================================
+   animations
+/* ========================================================================== */
+
+.js--island-animation,
+.js--features-animation {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+.js--island-animation.animated,
+.js--features-animation.animated {
+  opacity: 1;
+}
+
+.js--heartbeat {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
