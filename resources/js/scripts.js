@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  alert("At the moment this page is best viewed in Google Chrome.")
+  alert("At the moment, please use a browser other than Safari. Thank you for your patients.");
   //sticky naviation
   $('.js--island-features').waypoint(function (direction) {
     if (direction == 'down') {
