@@ -200,8 +200,8 @@ header {
 .mobile-nav-icon {
   margin-top: 30px;
   cursor: pointer;
-  display: none;
   float: right;
+  display: none;
 }
 
 .mobile-nav-icon i {
