@@ -404,6 +404,10 @@ a.btn-island {
    OTHER ISLANDS FOR EVERYONE
 /* ========================================================================== */
 
+.other-islands-features {
+  text-align: center;
+}
+
 .other-islands {
   background-color: #f1fbfc; /* Almost White-Blue Curacao */
 }
