@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  alert("At the moment, please use a browser other than Safari. Thank you for your patients.");
+  alert("Please use Google Chrome or Mozilla Firefox for best experience.");
   //sticky naviation
   $('.js--island-features').waypoint(function (direction) {
     if (direction == 'down') {
