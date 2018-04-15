@@ -307,11 +307,23 @@
 
       <div class="map"></div>
 
-      <div class="form-box">
+      <div class="form-box" id="form">
         <div class="row">
           <h2> Reach out with Questions or Hellos </h2>
             <div class="row">
               <form method="POST" action="mailer.php" class="contact-form">
+
+                <div class="row">
+                  <?php
+                    if($_GET['success'] == 1) {
+                      echo "<div class=\"form-messages success\"> Thank You! Your Message has been sent. </div>";
+                    }
+                    if($_GET['success'] == -1) {
+                      echo "<div class=\"form-messages error\"> Oops! Someting's wrong. Try again. </div>";
+                    }
+                  ?>
+                </div>
+
                 <div class="row">
                   <div class="col span-1-of-3">
                     <label for="name"> Name </label>
@@ -375,6 +387,7 @@
             </div>
         </div>
       </div>
+
     </div>
                                               <!--    END FORM AREA    -->
 
